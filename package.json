@@ -1,0 +1,16 @@
+{
+  "$schema": "https://json.schemastore.org/package.json",
+  "license": "MIT",
+  "name": "app",
+  "private": true,
+  "type": "module",
+  "version": "0.0.0",
+  "engines": {
+    "node": "24.x"
+  },
+  "scripts": {
+    "ui:dev": "pnpm --filter @elevator/ui dev",
+    "service:dev": "PYTHONPATH=packages/elevator-service/src uv run --package elevator_service uvicorn server.server:app --reload",
+    "serivce:test": "PYTHONPATH=packages/elevator-service/src uv run --package elevator_service pytest -s packages/elevator-service/tests/"
+  }
+}

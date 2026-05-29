@@ -1,0 +1,63 @@
+{
+  "[javascript]": {
+    "editor.codeActionsOnSave": {
+      "source.fixAll.eslint": "explicit"
+    },
+    "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+  },
+  "[javascriptreact]": {
+    "editor.codeActionsOnSave": {
+      "source.fixAll.eslint": "explicit"
+    },
+    "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+  },
+  "[python]": {
+    "editor.codeActionsOnSave": {
+      "source.fixAll.ruff": "explicit",
+      "source.organizeImports.ruff": "explicit"
+    },
+    "editor.defaultFormatter": "charliermarsh.ruff",
+    "editor.formatOnSave": true
+  },
+  "[typescript]": {
+    "editor.codeActionsOnSave": {
+      "source.fixAll.eslint": "explicit"
+    },
+    "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+  },
+  "[typescriptreact]": {
+    "editor.codeActionsOnSave": {
+      "source.fixAll.eslint": "explicit"
+    },
+    "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+  },
+  "explorer.compactFolders": false,
+  "mypy-type-checker.importStrategy": "fromEnvironment",
+  "mypy-type-checker.interpreter": [
+    "${workspaceFolder}/.venv/bin/python"
+  ],
+  "mypy-type-checker.reportingScope": "workspace",
+  "python.analysis.autoSearchPaths": true,
+  "python.analysis.enablePytestSupport": false,
+  "python.analysis.extraPaths": [
+    "${workspaceFolder}/packages/elevator-service/src"
+  ],
+  "pylint.args": [
+    "--init-hook=import sys; sys.path.append('${workspaceFolder}/packages/elevator-service/src')",
+    "--explicit-package-bases=yes"
+  ],
+  "python.defaultInterpreterPath": "${workspaceFolder}/.venv/bin/python",
+  "pylint.importStrategy": "fromEnvironment",
+  "pylint.interpreter": ["${workspaceFolder}/.venv/bin/python"],
+  "ruff.interpreter": ["${workspaceFolder}/.venv/bin/python"],
+  "eslint.debug": true,
+  "eslint.useFlatConfig": true,
+  "eslint.validate": [
+    "javascript",
+    "javascriptreact",
+    "json",
+    "jsonc",
+    "typescript",
+    "typescriptreact",
+  ],
+}

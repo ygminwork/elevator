@@ -1,0 +1,15 @@
+# Node
+node_modules
+pnpm-debug.log*
+
+# Python
+.venv
+.pytest_cache
+
+# Misc.
+.idea
+.DS_Store
+
+# Logs
+logs
+*.log
